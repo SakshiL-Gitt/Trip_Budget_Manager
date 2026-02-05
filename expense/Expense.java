@@ -1,3 +1,4 @@
+package expense;
 
 public class Expense {
 
