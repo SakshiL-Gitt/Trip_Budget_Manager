@@ -1,4 +1,4 @@
-package com.tripbudget.app;
+package app;
 
 public class TripBudgetApp {
     public static void main(String[] args) {
