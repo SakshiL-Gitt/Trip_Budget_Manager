@@ -1,13 +1,13 @@
-package com.tripbudget.settlement;
+package settlement;
 
-import com.tripbudget.expense.Expense;
-import com.tripbudget.participant.Participant;
+import expense.Expense;
+import participant.Participant;
 
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-public class SettlementService {
+public class Settlement_Service {
 
     public Map<String, Double> calculateBalances(
             List<Participant> participants,
