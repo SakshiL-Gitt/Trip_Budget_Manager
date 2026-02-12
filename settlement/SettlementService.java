@@ -7,7 +7,7 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-public class Settlement_Service {
+public class SettlementService {
 
     public Map<String, Double> calculateBalances(
             List<Participant> participants,

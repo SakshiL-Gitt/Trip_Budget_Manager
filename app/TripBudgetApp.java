@@ -1,7 +1,7 @@
 package app;
 import expense.ExpenseManager;
 import participant.ParticipantManager;
-import settlement.Settlement_Service;
+import settlement.SettlementService;
 
 import java.util.Map;
 import java.util.Scanner;
@@ -10,13 +10,13 @@ public class TripBudgetApp {
 
     private ParticipantManager participantManager;
     private ExpenseManager expenseManager;
-    private Settlement_Service settlementService;
+    private SettlementService settlementService;
     private Scanner sc;
 
     public TripBudgetApp() {
         participantManager = new ParticipantManager();
         expenseManager = new ExpenseManager();
-        settlementService = new Settlement_Service();
+        settlementService = new SettlementService();
         sc = new Scanner(System.in);
     }
 
