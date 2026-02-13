@@ -1,5 +1,6 @@
 package app;
 import expense.ExpenseManager;
+import reportService.ReportService;
 import participant.ParticipantManager;
 import settlement.Settlement_Service;
 
@@ -11,12 +12,14 @@ public class TripBudgetApp {
     private ParticipantManager participantManager;
     private ExpenseManager expenseManager;
     private Settlement_Service settlementService;
+    private ReportService reportService;
     private Scanner sc;
 
     public TripBudgetApp() {
         participantManager = new ParticipantManager();
         expenseManager = new ExpenseManager();
         settlementService = new Settlement_Service();
+        reportService = new ReportService();
         sc = new Scanner(System.in);
     }
 
@@ -44,10 +47,19 @@ public class TripBudgetApp {
                 case 4:
                     showSettlement();
                     break;
-
+            
                 case 5:
+                    reportService.generateReport(
+                            participantManager.getAllParticipants(),
+                            expenseManager.getAllExpenses()
+                        );
+                    break;
+
+                case 6:
                     exitApp();
                     return;
+
+
 
                 default:
                     System.out.println("Invalid choice!");
@@ -61,7 +73,8 @@ public class TripBudgetApp {
         System.out.println("2. Add Expense");
         System.out.println("3. Show Total Expense");
         System.out.println("4. Show Settlement");
-        System.out.println("5. Exit");
+        System.out.println("5. Generate Trip Report");
+        System.out.println("6.Exit");
         System.out.print("Choose option: ");
     }
 
