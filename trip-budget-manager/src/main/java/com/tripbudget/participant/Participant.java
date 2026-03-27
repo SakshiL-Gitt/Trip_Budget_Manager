@@ -1,4 +1,4 @@
-package participant;
+package com.tripbudget.participant;
 
 public class Participant {
     private String name;

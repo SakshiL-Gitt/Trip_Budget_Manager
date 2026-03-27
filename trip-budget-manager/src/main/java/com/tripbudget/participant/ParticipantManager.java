@@ -1,4 +1,4 @@
-package participant;
+package com.tripbudget.participant;
 
 import java.util.ArrayList;
 import java.util.List;

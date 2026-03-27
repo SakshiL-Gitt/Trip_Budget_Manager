@@ -1,7 +1,7 @@
-package reportService;
+package com.tripbudget.reportService;
 
-import expense.Expense;
-import participant.Participant;
+import com.tripbudget.expense.Expense;
+import com.tripbudget.participant.Participant;
 
 import java.util.HashMap;
 import java.util.List;

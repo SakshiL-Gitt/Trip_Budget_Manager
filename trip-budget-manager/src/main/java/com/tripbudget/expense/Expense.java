@@ -1,4 +1,4 @@
-package expense;
+package com.tripbudget.expense;
 
 public class Expense {
 

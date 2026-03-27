@@ -1,7 +1,8 @@
-package app;
-import expense.ExpenseManager;
-import participant.ParticipantManager;
-import settlement.SettlementService;
+package com.tripbudget.app;
+
+import com.tripbudget.expense.ExpenseManager;
+import com.tripbudget.participant.ParticipantManager;
+import com.tripbudget.settlement.SettlementService;
 
 import java.util.Map;
 import java.util.Scanner;

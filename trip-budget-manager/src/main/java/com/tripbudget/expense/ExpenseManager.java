@@ -1,4 +1,4 @@
-package expense;
+package com.tripbudget.expense;
 
 import java.util.ArrayList;
 import java.util.List;
