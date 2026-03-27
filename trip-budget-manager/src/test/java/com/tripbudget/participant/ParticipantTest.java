@@ -1,4 +1,4 @@
-package participant;
+package com.tripbudget.participant;
 
 import static org.junit.jupiter.api.Assertions.*;
 import org.junit.jupiter.api.Test;
